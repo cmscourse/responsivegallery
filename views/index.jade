@@ -3,6 +3,76 @@ link(rel="stylesheet", href="stylesheets/bootstrap-responsive.min.css")
 link(rel="stylesheet", href="stylesheets/bootstrap.min.css")
 link(rel="stylesheet", href="stylesheets/bootswatch.css")
 block content
+  .navbar.navbar-fixed-top
+      .navbar-inner
+          .container
+            a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.brand(href='../') Bootswatch
+            #main-menu.nav-collapse.collapse
+              ul#main-menu-left.nav
+                li
+                  a(onclick='pageTracker._link(this.href); return false;', href='http://news.bootswatch.com') News
+                li
+                  a#swatch-link(href='../#gallery') Gallery
+                li.dropdown
+                  a.dropdown-toggle(data-toggle='dropdown', href='#')
+                    | Preview
+                    b.caret
+                  ul#swatch-menu.dropdown-menu
+                    li
+                      a(href='../default') Default
+                    li.divider
+                    li
+                      a(href='../amelia') Amelia
+                    li
+                      a(href='../cerulean') Cerulean
+                    li
+                      a(href='../cosmo') Cosmo
+                    li
+                      a(href='../cyborg') Cyborg
+                    li
+                      a(href='../journal') Journal
+                    li
+                      a(href='../readable') Readable
+                    li
+                      a(href='../simplex') Simplex
+                    li
+                      a(href='../slate') Slate
+                    li
+                      a(href='../spacelab') Spacelab
+                    li
+                      a(href='../spruce') Spruce
+                    li
+                      a(href='../superhero') Superhero
+                    li
+                      a(href='../united') United
+                li#preview-menu.dropdown
+                  a.dropdown-toggle(data-toggle='dropdown', href='#')
+                    | Download
+                    b.caret
+                  ul.dropdown-menu
+                    li
+                      a(target='_blank', href='bootstrap.min.css') bootstrap.min.css
+                    li
+                      a(target='_blank', href='bootstrap.css') bootstrap.css
+                    li.divider
+                    li
+                      a(target='_blank', href='variables.less') variables.less
+                    li
+                      a(target='_blank', href='bootswatch.less') bootswatch.less
+              ul#main-menu-right.nav.pull-right
+                li
+                  a(rel='tooltip', target='_blank', href='http://builtwithbootstrap.com/', title='', onclick='_gaq.push([\'_trackEvent\', \'click\', \'outbound\', \'builtwithbootstrap\']);', data-original-title='Showcase of Bootstrap sites & apps')
+                    | Built With Bootstrap
+                    i.icon-share-alt
+                li
+                  a(rel='tooltip', target='_blank', href='https://wrapbootstrap.com/?ref=bsw', title='', onclick='_gaq.push([\'_trackEvent\', \'click\', \'outbound\', \'wrapbootstrap\']);', data-original-title='Marketplace for premium Bootstrap templates')
+                    | WrapBootstrap
+                    i.icon-share-alt
+
   h1= title
   p Welcome to #{title}
 
